@@ -1,0 +1,22 @@
+h1 Hong Wei's Personal Twitch.TV Viewer 
+
+
+main(ng-app='TwitchApi')
+  section(ng-controller='MainCtrl')
+  
+    header
+      ul#mainMenu
+        li(data-display='allUsers').activeMenu All
+        li(data-display='onlineUsers') Online
+        li(data-display='offlineUsers') Offline
+    #searchMenu
+      i#searchIcon.fa.fa-search
+      input(type='text' ng-model='searchText')#searchBar
+    ul#people
+      a(href='https://twitch.tv/{{user.username}}' target="_blank" ng-repeat='user in profile | filter:searchText')
+        li
+          img(ng-src='{{user.logo}}' err-src='http://placehold.it/50x50').pic
+          span.name {{user.name}}
+          span.status
+            i(class='{{user.status}}')
+          span.title {{user.streamTitle}}

@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+h1 {
+  text-align: center;
+  font-family: Roboto, Arial, Sans-Serif;
+  color: white;
+}
+
+body {
+  background: url("http://www.guoguiyan.com/data/out/83/68764403-games-wallpapers.png");
+}
+
+main {
+  margin: 0 auto;
+  width: 300px;
+  border: 1px solid #8FD7D6;
+  background: white;
+}
+main header {
+  height: 50px;
+  background-color: #8FD7D6;
+  position: relative;
+}
+main header ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+main header li {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+  font-family: Roboto, Arial, Sans-Serif;
+  color: black;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-right: 25px;
+  border-right: 1px solid #b5e4e4;
+}
+main header li:first-child {
+  padding-right: 35px;
+}
+main header li:last-child {
+  border-right: none;
+}
+main header li:hover {
+  cursor: pointer;
+}
+main header .activeMenu:after, main header .activeMenu:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+main header .activeMenu:after {
+  border-top-color: #F47564;
+  border-width: 10px;
+  margin-left: -10px;
+  z-index: 10;
+}
+main #searchMenu {
+  text-align: center;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E4E0E1;
+}
+main #searchMenu #searchBar {
+  position: relative;
+  width: 70%;
+  text-align: left;
+  line-height: 20px;
+  border-radius: 20px;
+  border: 1px solid #E4E0E1;
+  outline: none;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: .8em;
+  font-family: Roboto, Arial, Sans-Serif;
+}
+main #searchMenu #searchIcon {
+  position: absolute;
+  z-index: 1;
+  padding-top: 3px;
+  left: 25px;
+  color: #E4E0E1;
+}
+main #people {
+  padding-left: 0;
+}
+main #people a {
+  text-decoration: none;
+}
+main #people li {
+  list-style-type: none;
+  display: block;
+  padding-left: 20px;
+  position: relative;
+  font-family: Roboto, Arial, Sans-Serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main #people li:nth-child(even) {
+  background-color: #f7f6f6;
+}
+main #people li .pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+main #people li .name, main #people li .status {
+  position: absolute;
+  line-height: 50px;
+}
+main #people li .name {
+  left: 80px;
+  color: #F47564;
+}
+main #people li .status {
+  right: 20px;
+}
+main #people li .title {
+  color: #b5a9ac;
+  font-size: .7em;
+}
+
+.green {
+  color: #8FD7D6;
+}
+
+.red {
+  color: #F47564;
+}
